@@ -6,57 +6,97 @@
 
 ## Dataset Content
 
-- Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
+- The dataset, sourced from Kaggle: Car Price Prediction, contains specifications of different car models along with their prices.
+  It includes 26 features such as:
+
+- Identification & specifications: make (brand), fuel type, aspiration, number of doors, body style, drive wheel, engine location, wheelbase, length, width, height, curb weight.
+
+- Engine details: engine type, number of cylinders, engine size, fuel system, bore ratio, stroke, compression ratio, horsepower, peak RPM.
+
+- Performance & economy: city MPG, highway MPG.
+
+- Target variable: price (USD).
+
+- Size: 205 rows × 26 columns.
 
 ## Business Requirements
 
-- Describe your business requirements
+- Identify the strongest features influencing car prices in the U.S. market.
 
 ## Hypothesis and how to validate?
 
-- List here your project hypothesis(es) and how you envision validating it (them)
+- Hypothesis: Cars with lower fuel efficiency (MPG) are more expensive.
+
+  Validation: Correlation analysis of MPG vs price.
+
+- Hypothesis: Certain brands (e.g., BMW, Jaguar) have higher average prices regardless of technical specs.
+
+  Validation: Grouped average price per brand.
+
+- Hypothesis: Engine size, curb weight, and number of cylinders are positively correlated with price.
+
+  Validation: Correlation analysis for each feature with the price.
 
 ## Project Plan
 
-- Outline the high-level steps taken for the analysis.
-- How was the data managed throughout the collection, processing, analysis and interpretation steps?
-- Why did you choose the research methodologies you used?
+- Data collection: Download dataset from Kaggle.
+
+- Data cleaning: Handle missing values, convert categorical data to usable formats, check for outliers.
+
+- Generate visualizations to explore relationships between features and price.
+
+- Summarize insights for business decision-making.
 
 ## The rationale to map the business requirements to the Data Visualisations
 
-- List your business requirements and a rationale to map them to the Data Visualisations
+- Identify top predictors.
+- Understand the pricing dynamics of a new market.
 
 ## Analysis techniques used
 
-- List the data analysis methods used and explain limitations or alternative approaches.
-- How did you structure the data analysis techniques. Justify your response.
-- Did the data limit you, and did you use an alternative approach to meet these challenges?
-- How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+- Descriptive statistics, grouped aggregations, histograms, correlation analysis.
 
 ## Ethical considerations
 
-- Were there any data privacy, bias or fairness issues with the data?
-- How did you overcome any legal or societal issues?
+- Dataset contains no personal information, no privacy risk.
 
 ## Unfixed Bugs
 
-- Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-- Did you recognise gaps in your knowledge, and how did you address them?
-- If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+- None
 
 ## Development Roadmap
 
-- What challenges did you face, and what strategies were used to overcome these challenges?
-- What new skills or tools do you plan to learn next based on your project experience?
+- Challenges:
+
+  Limited prior experience using Pandas for advanced data manipulation and visualization libraries (Matplotlib, Seaborn, Plotly) for producing insightful and aesthetically clear charts.
+
+- Strategies to Overcome Challenges:
+
+  Studied targeted tutorials and Kaggle notebooks to improve proficiency with Pandas groupby operations, merges, and feature engineering.
+
+  Practiced creating different types of plots (bar, box, scatter, heatmap) and iteratively refined them to improve clarity and storytelling.
+
+- Next Skills/Tools to Learn:
+
+  Advanced Pandas techniques (window functions, pivot tables, custom aggregations).
+
+  Interactive dashboard creation with Power BI or Tableau.
+
+  SQL for complex data queries.
 
 ## Main Data Analysis Libraries
 
-- Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+- pandas – data cleaning, aggregation.
+
+- numpy – numerical operations.
+
+- matplotlib / seaborn / plotly – visualizations.
 
 ## Credits
 
-- In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
-- You can break the credits section up into Content and Media, depending on what you have included in your project.
+- Content: Dataset from Kaggle.
+
+- Media: Visualizations generated in Python using Matplotlib, Seaborn, and Plotly.
 
 ### Content
 
@@ -69,6 +109,6 @@
 - The photos used on the home and sign-up page are from This Open-Source site
 - The images used for the gallery page were taken from this other open-source site
 
-## Acknowledgements (optional)
+## Acknowledgements
 
-- Thank the people who provided support through this project.
+- Thanks to Vasi, for guidance and support throughout the project.
